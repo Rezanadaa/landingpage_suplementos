@@ -13,24 +13,24 @@
 </head>
 <body>
     
-    <div class="hero">
+    <div class="hero" id="home">
         <nav>
             <h2 class="logo"><img src="imgs/suplementos.png"></h2>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">O que são?</a></li>
-                <li><a href="#">Marcas</a></li>
+                <li id="nav-home"><a href="#home">Home</a></li>
+                <li id="nav-sobre"><a href="#sobre">O que são?</a></li>
+                <li id="nav-princ"><a href="#princ">Principais</a></li>
             </ul>
           
         </nav>
         <div class="content">
             <h1>Tudo que você precisa saber sobre suplementos. </h1>
             <br>
-            <a href="#" class="btn">Saiba mais</a>
+            <a href="#sobre" class="btn">Saiba mais</a>
             
         </div>
      </div>
-     <section class="about">
+     <section class="about" id="sobre">
          <div class="main">
              <img src="imgs/suplementos.jpg">
              <div class="about-text">
@@ -40,17 +40,77 @@
          </div>
      </section>
    
-     <div class="marcas">
+     <div class="principais" id="princ">
          <div class="title">
-             <h2>Marcas</h2>
+             <h2>Principais Suplementos</h2>
          </div>
          <div class="box">
              <div class="card">
-                 <i class="fas fa-bars"></i>
-                 <h5>Web Developement</h5>
+                 <div class="card-img" id="card-crea"></div>
+                 <h5>Creatina</h5>
+                 <div class="pra">
+                     <ul>
+                       <p> Apresenta benefícios para: </p>
+                       <li> Melhorar a capacidade de exercício;</li>
+                            <li>Adaptações de força durante o treinamento;</li>
+                                <li>Ganho de massa muscular;</li>
+                                     <li>Aumento de volume muscular;</li>
+                                         <li>Redução da fadiga.</li>
+                 </ul>
+                    <p style="text-align: center">
+                    <a class="button" href="https://www.tuasaude.com/creatina/" target="_blank">Saiba Mais</a>
+                    </p>
+                 </div>
+            </div>
+       
+            <div class="box">
+                <div class="card">
+                    <div class="card-img" id="card-wp"></div>
+                    <h5>Whey Protein</h5>
+                 <div class="pra">
+                    <ul>
+                        <p> Apresenta benefícios para: </p>
+                        <li> Auxílio para o ganho de massa muscular;</li>
+                             <li>Auxílio para recuperação muscular;</li>
+                                 <li>Prevenção da perda e manutenção de massa muscular;</li>
+                  </ul>
+                    <p style="text-align: center">
+                    <a class="button" href="https://www.tuasaude.com/whey-protein/" target="_blank">Saiba Mais</a>
+                    </p>
+                    </div>
+
+             </div>
+
+          <div class="box">
+                <div class="card">
+                    <div class="card-img" id="card-hip"></div>
+                    <h5>Hipercalorico</h5>
+                 <div class="pra">
+                    <ul>
+                        <p> Apresenta benefícios para: </p>
+                        <li> Proporciona mais disposição por meio do fornecimento de energia;</li>
+                             <li>Favorece a recuperação muscular pós-treino;</li>
+                                 <li>Contribui para o ganho de massa muscular magra (hipertrofia);</li>
+                                    
+                     </ul>
+                    <p style="text-align: center">
+                    <a class="button" href="https://www.gsuplementos.com.br/conteudo/para-que-serve/hipercalorico-para-que-serve/#:~:text=O%20hipercal%C3%B3rico%20funciona%20como%20um,no%20sistema%20celular%20e%20imunol%C3%B3gico." target="_blank">Saiba Mais</a>
+                    </p>
+                    </div>
+                </div>
              </div>
          </div>
-     </div>
+    </div>
+</div>
+     <footer>
+        <p>Tudo sobre suplementos</p>
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p class="end">&copy; 2022 Renan Pontes </p>
+    </footer>
 
 </body>
 </html>
