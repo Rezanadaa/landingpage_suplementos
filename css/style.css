@@ -101,6 +101,8 @@ h1{
     height: auto;
     width: 430px;
     border-radius: 20px;
+    animation-name: slide-l;
+    animation-duration: 2s;
 }
 .about-text{
     width: 550px;
@@ -162,6 +164,8 @@ h1{
     overflow: hidden;
     text-align: center;
     transition: all .5s ease;
+    animation-name: slide;
+    animation-duration: 5s;
 }
 
 .card-img{
@@ -284,4 +288,29 @@ footer p:nth-child(2){
     color: #ee0b3c;
     bottom: 35px;
     font-size: 14px;
+}
+
+@keyframes slide {
+    from {
+        transform: translateY(20vw);
+        opacity: 0;
+        animation-timing-function:ease;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+}
+@keyframes slide-l {
+    from {
+        transform: translateX(-20vw);
+        opacity: 0;
+        animation-timing-function:ease-in-out;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
 }
